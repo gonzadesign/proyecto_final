@@ -1,0 +1,58 @@
+@import "menu.scss";
+@import "index.scss";
+@import "footer.scss";
+@import "nosotros.scss";
+@import "contacto.scss";
+@import "carta.scss";
+@import "variables.scss";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+body{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+    background-color: #131313;
+}
+
+h2{
+    font-size: 2rem;
+    font-weight: 200;
+}
+
+p{
+    font-size: 1.1rem;
+    font-weight: 200;
+}
+
+ul{
+    margin: 0;
+    padding:0;
+}
+
+.contenedor{
+    @include contenedor;
+}
+
+hr{
+    color: rgb(141, 141, 141);
+    opacity: .09;
+    height: 2px;
+}
+
+span{
+    color:#e7b343;
+    font-weight: $fw4;
+}

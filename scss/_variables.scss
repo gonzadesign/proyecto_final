@@ -1,0 +1,8 @@
+$colorH1: #e7b343;
+$fw4:400;
+
+@mixin contenedor{
+    width: 90%;
+    margin: 20px auto;
+    min-width: 375px;
+}

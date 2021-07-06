@@ -1,0 +1,156 @@
+#sectionNosotros{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.flex-container{
+    width: 50%;
+    height: auto;
+    text-align: center;
+    margin:auto;
+    padding: 80px 0;
+}
+
+.flex-container h1{
+    font-size: 5rem;
+    font-weight: 200;
+    color: rgb(231, 179, 67);
+    position: relative;
+    display: inline-block;
+}
+
+.flex-container h1::before, .flex-container h1::after{
+    content: "";
+    position: absolute;
+    width: 130px;
+    height: 2px;
+    background-color: rgb(231, 179, 67);
+    top: 50%;
+}
+
+.flex-container h1::before{
+    left: -140px;
+}
+
+.flex-container h1::after{
+    right: -140px;
+}
+
+.flex-container p{
+    color: #fff;
+    margin-bottom: 30px;
+}
+
+/*TEAM*/
+#section{
+    text-align: center;
+}
+.h2-Nosotros{
+    color: rgb(231, 179, 67);
+    font-size: 80px;
+    text-align: center;
+    padding: 50px;
+    margin-bottom: 40px;
+    display: inline-block;
+    position: relative;
+}
+
+#section .h2-Nosotros::before, #section .h2-Nosotros::after{
+    content: "";
+    position: absolute;
+    width: 130px;
+    height: 2px;
+    background-color: rgb(231, 179, 67);
+    top: 50%;
+}
+
+#section .h2-Nosotros::before{
+    left: -110px;
+}
+
+#section .h2-Nosotros::after{
+    right: -110px;
+}
+
+.flex-container-card{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    height: auto;
+    align-items: center;
+}
+
+.card{
+    margin-bottom: 50px;
+    margin-right: 50px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 450px;
+    border-radius: 15px;
+    padding: 10px 0;
+    background-color: rgb(27, 27, 27);
+    box-shadow: 0px 0px 10px 5px rgb(0, 0, 0);
+    color: #fff;
+    transition: all 400ms ease;   
+}
+
+.card:hover{
+    transform: translateY(-3%);
+}
+
+.chapter{
+    object-fit: cover;
+    object-position: center left;
+    width:150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    box-shadow: 0px 0px 10px 5px rgb(0, 0, 0);
+}
+
+.chapterChef{
+    object-fit: cover;
+    object-position: center top;
+    width:150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    box-shadow: 0px 0px 10px 5px rgb(0, 0, 0);
+}
+
+.card h2{
+    font-weight: 300;
+    font-size: 2rem;
+}
+
+.card h3{
+    font-weight: 300;
+    font-size: 17px;
+    margin-bottom: 40px;
+}
+
+.card ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.card ul li img{
+    width: 25px;
+    height: 25px;
+    transition: .4s;
+    opacity: .5;
+    transform: scale(1);
+}
+
+.card ul li img:hover{
+  opacity: 1;
+  cursor: pointer;
+  transform: scale(1.1);
+}

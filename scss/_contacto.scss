@@ -1,0 +1,150 @@
+.flex-content{
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px 0;
+}
+
+.items-left{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 40%;
+    min-width: 300px;
+    padding-top: 50px; 
+    animation-name: opacity-MoveRight;
+    animation-iteration-count:unset;
+    animation-duration: 1.2s;   
+}
+
+@keyframes opacity-MoveRight{
+    from{
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+
+    to{
+        opacity: 1;
+    }
+}
+
+.items-left p{
+    color: #fff;
+}
+
+.datos-contact{
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+    gap: 10px;
+    min-width: 350px;
+    margin-bottom: 20px;
+}
+
+/*FORMULARIO*/
+
+.form{
+    height: auto;
+    width: 50%;
+    min-width: 280px;
+    animation-name: opacity-MoveLeft;
+    animation-iteration-count:unset;
+    animation-duration: 1.2s;   
+}
+
+@keyframes opacity-MoveLeft{
+    from{
+        opacity: 0;
+        transform: translatex(100%);
+    }
+
+    to{
+        opacity: 1;
+    }
+}
+
+.form h2{
+    text-align: center;
+    font-weight: 200;
+    font-size: 1.3rem;
+    color: #fefce6;
+    padding-bottom: 10px;
+}
+.input{
+    background-color: transparent;
+    border: 1px solid #ffc107b9;
+    border-radius: 8px;
+    border-bottom: 1px solid #ffc107b9;
+    color: rgb(167, 166, 166);
+    height: 50px;
+    
+}
+.input:focus {
+    box-shadow:none;
+    border: 1px solid #ffc107b9;
+    background-color: transparent;
+    color: rgb(167, 167, 167);
+}
+
+.col{
+    margin-bottom: 20px;
+}
+
+#textarea{
+    min-height: 100px;
+}
+
+.boton{
+    width: 100%;
+}
+
+::placeholder{
+    color: #fefce6 !important;
+    opacity: .5 !important;
+}
+/*FIN STYLE FORM*/
+
+.maps{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    margin: 100px 0;
+    animation-name: opacity-MoveUP;
+    animation-iteration-count:unset;
+    animation-duration: 5s;  
+}
+
+@keyframes opacity-MoveUP{
+    from{
+        opacity: 0;
+        
+    }
+
+    to{
+        opacity: 1;
+    }
+}
+
+/*QUERYS*/
+@media only screen and (max-width:450px){
+    .flex-content{
+        gap: 20px;
+    }
+
+    .datos-contact{
+        display: block;
+        text-align: center;
+        width: 100%;
+        gap: 10px;
+        min-width: 350px;
+        margin-bottom: 20px;
+    }
+}

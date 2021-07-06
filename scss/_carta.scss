@@ -1,0 +1,101 @@
+section{
+    height: auto;
+    padding: 50px 0;
+}
+
+.banner-menu{
+    width: 100%;
+    min-width: 450px;
+    height:calc(100vh - 250px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.banner-menu img{
+    position: absolute;
+    width: 100%;
+    object-position: center ;
+    object-fit:cover;
+}
+
+/*LOGO MENU Y TITULO*/
+.titulo-principal{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.titulo-principal h2{
+    font-size: 3rem;
+    font-weight: 200;
+    color: #e7b343;
+}
+.titulo-principal img{
+    width: 150px;
+    height: 130px;
+}
+
+/*MENU CARTA*/
+#carta-content img{
+    width: 80px;
+    height: 60px;
+}
+
+#carta-content h2{
+    padding: 10px 0;
+    font-weight: 300;
+    color: #e7b343;
+    text-transform: uppercase;
+}
+
+.carta-items{
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+}
+
+.carta-items p{
+    text-transform: uppercase;
+}
+
+.descripcion{
+    color:rgb(160, 160, 160);
+    text-transform: none;
+    font-weight: 200;
+}
+
+#bebida-logo{
+    width: 55px !important;
+}
+
+/*ECCION DELIVERY*/
+
+.delivery-content{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+}
+.delivery-item-text{
+    min-width: 300px;
+    color: black;
+    width: 50%;
+    padding: 0 15px;
+}
+
+.delivery-item-text h2{
+    font-size: 7rem;
+    color:#e7b343 ;
+}
+
+.delivery-item-text p{
+    font-size: 1.5rem;
+    color:#fff ;
+}
+.delivery-item-img{
+    width: 40%;
+}
