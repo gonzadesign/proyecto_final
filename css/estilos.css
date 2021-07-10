@@ -165,7 +165,7 @@ nav {
 /*SECCION NOSOTROS*/
 .container-fluid {
   padding: 0;
-  background-color: #d1d1d1;
+  background-color: #131313;
   height: 600px;
   width: 100%;
   display: block;
@@ -192,10 +192,10 @@ nav {
 
 .about-title {
   width: 100%;
-  color: black; }
+  color: #fefce6; }
   .about-title h2 {
     position: relative;
-    font-weight: 300;
+    font-weight: 100;
     font-size: 2rem;
     padding-bottom: 10px; }
 
@@ -212,8 +212,7 @@ nav {
   width: 70px; }
 
 .about-title p {
-  color: black;
-  font-weight: 300; }
+  color: #fefce6; }
 
 /*CARDS*/
 .flex-container-cards {
@@ -223,7 +222,6 @@ nav {
   justify-content: center;
   flex-wrap: wrap;
   width: 100%;
-  padding: 100px 0;
   height: auto;
   cursor: default; }
 
@@ -547,9 +545,9 @@ footer .footer-items p {
     opacity: 1; } }
 
 .form h2 {
-  text-align: center;
+  text-align: left;
   font-weight: 200;
-  font-size: 1.3rem;
+  font-size: 1rem;
   color: #fefce6;
   padding-bottom: 10px; }
 
