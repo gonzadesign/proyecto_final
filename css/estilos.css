@@ -95,19 +95,23 @@ nav {
   justify-content: center;
   align-items: center;
   position: relative; }
-  .banner img {
-    position: absolute;
-    opacity: .4;
-    width: 100%;
-    object-position: center;
-    object-fit: cover; }
+
+.banner img {
+  position: relative;
+  opacity: .4;
+  width: 100%;
+  height: 100%;
+  object-position: center;
+  object-fit: cover;
+  z-index: 1; }
 
 .banner .bienvenidos {
   width: 60%;
   text-align: center;
   color: #fff;
   position: absolute;
-  line-height: 4rem; }
+  line-height: 4rem;
+  z-index: 2; }
   .banner .bienvenidos h1 {
     color: #e7b343;
     font-size: 5rem;
@@ -694,6 +698,41 @@ section {
 
 .delivery-item-img {
   width: 40%; }
+
+.contenedor-galeria {
+  height: auto; }
+
+.grid-container {
+  justify-content: center;
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px; }
+  .grid-container .img-item {
+    width: 100%;
+    height: auto; }
+    .grid-container .img-item img {
+      width: 100%;
+      height: 100%;
+      transition: all 400ms ease;
+      opacity: .8;
+      cursor: pointer;
+      transform: scale(1); }
+    .grid-container .img-item :hover {
+      opacity: 1;
+      transform: scale(1.05); }
+
+@media only screen and (max-width: 576px) {
+  .grid-container {
+    grid-template-columns: 1fr; } }
+
+@media only screen and (min-width: 576px) {
+  .grid-container {
+    grid-template-columns: 1fr 1fr; } }
+
+@media only screen and (min-width: 768px) {
+  .grid-container {
+    grid-template-columns: repeat(4, 1fr); } }
 
 * {
   margin: 0;
