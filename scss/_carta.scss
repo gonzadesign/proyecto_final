@@ -1,3 +1,4 @@
+
 section{
     height: auto;
     padding: 50px 0;
@@ -67,10 +68,14 @@ section{
 }
 
 #bebida-logo{
-    width: 55px !important;
+    width: 45px !important;
 }
 
 /*ECCION DELIVERY*/
+
+#section-delivery{
+    padding-top: 0;
+}
 
 .delivery-content{
     width: 100%;
@@ -98,4 +103,96 @@ section{
 }
 .delivery-item-img{
     width: 40%;
+}
+
+@media only screen and (max-width:750px){
+    .delivery-item-text{
+    
+        h2{
+            font-size: 3rem;
+            color:#e7b343 ;
+        }
+
+        p{
+            font-size: 1rem;
+        }
+    }
+
+    .delivery-item-img{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        img{
+            width: 400px;
+        }
+    }
+}
+
+@media only screen and (min-width:750px){
+    .delivery-item-text{
+    
+        h2{
+            font-size: 5rem;
+            color:#e7b343 ;
+        }
+
+        p{
+            font-size: 1.1rem;
+        }
+    }
+
+    .delivery-item-img{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        img{
+            width: 600px;
+        }
+    }
+}
+
+@media only screen and (min-width:850px){
+    
+
+    .delivery-item-text{
+    
+        h2{
+            font-size: 5rem;
+            color:#e7b343 ;
+        }
+
+        p{
+            font-size: 1.1rem;
+        }
+    }
+}
+
+@media only screen and (min-width:960px){
+    .delivery-content{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+
+        img{
+            width: 40%;
+        }
+    }
+
+    .delivery-item-img{
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        img{
+            width: 100%;
+        }
+    }
 }

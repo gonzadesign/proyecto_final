@@ -45,6 +45,7 @@
 
 /*TEAM*/
 #section{
+    padding-top: 0;
     text-align: center;
 }
 .h2-Nosotros{
@@ -57,7 +58,7 @@
     position: relative;
 }
 
-#section .h2-Nosotros::before, #section .h2-Nosotros::after{
+/* #section .h2-Nosotros::before, #section .h2-Nosotros::after{
     content: "";
     position: absolute;
     width: 130px;
@@ -73,7 +74,7 @@
 #section .h2-Nosotros::after{
     right: -110px;
 }
-
+*/
 .flex-container-card{
     display: flex;
     justify-content: center;
@@ -97,6 +98,7 @@
     box-shadow: 0px 0px 10px 5px rgb(0, 0, 0);
     color: #fff;
     transition: all 400ms ease;   
+    cursor: pointer;
 }
 
 .card:hover{
@@ -153,4 +155,44 @@
   opacity: 1;
   cursor: pointer;
   transform: scale(1.1);
+}
+
+@media only screen and (max-width:750px){
+    #sectionNosotros{
+        padding-top: 0;
+    }
+    .flex-container{
+        width: 90%;
+    }
+    .flex-container h1{
+        font-size: 3rem;
+    }
+    
+    .flex-container h1::before, .flex-container h1::after{
+        content: "";
+        position: absolute;
+        width: 80px;
+        height: 2px;
+        background-color: rgb(231, 179, 67);
+        top: 50%;
+    }
+    
+    .flex-container h1::before{
+        left: -100px;
+    }
+    
+    .flex-container h1::after{
+        right: -100px;
+    }
+    
+    .flex-container p{
+        color: #fff;
+        margin-bottom: 30px;
+    }
+
+    /*TEAM*/
+
+    .h2-Nosotros{
+        font-size: 3rem;
+    }
 }
