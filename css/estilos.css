@@ -276,6 +276,13 @@ nav {
     font-size: 1.3rem; }
   .textContainer {
     text-align: center; }
+  .flexContainer {
+    width: 80%;
+    justify-content: center; }
+  .contenedor {
+    display: flex;
+    justify-content: center;
+    overflow: hidden; }
   .gridImgContainer {
     width: 100%;
     display: flex;

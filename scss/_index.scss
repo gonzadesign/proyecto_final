@@ -242,6 +242,17 @@
     .textContainer{
         text-align: center;
     }
+
+    .flexContainer{
+        width: 80%;
+        justify-content: center;
+    }
+
+    .contenedor{
+        display: flex;
+        justify-content: center;
+        overflow: hidden;
+    }
     
    
     .gridImgContainer{
