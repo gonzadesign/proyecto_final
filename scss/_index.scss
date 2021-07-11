@@ -244,11 +244,12 @@
     }
 
     .flexContainer{
-        width: 80%;
+        width: 90%;
+        overflow: hidden;
         justify-content: center;
     }
 
-    .contenedor{
+    #contenedorPrimeraSeccion{
         display: flex;
         justify-content: center;
         overflow: hidden;
