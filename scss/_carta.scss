@@ -6,7 +6,7 @@ section{
 
 .banner-menu{
     width: 100%;
-    min-width: 450px;
+    min-width: 350px;
     height:calc(100vh - 250px);
     display: flex;
     justify-content: center;
@@ -44,6 +44,10 @@ section{
     height: 60px;
 }
 
+.col-md-6{
+    margin-bottom: 22px;
+}
+
 #carta-content h2{
     padding: 10px 0;
     font-weight: 300;
@@ -71,7 +75,7 @@ section{
     width: 45px !important;
 }
 
-/*ECCION DELIVERY*/
+/*SECCION DELIVERY*/
 
 #section-delivery{
     padding-top: 0;
@@ -109,14 +113,15 @@ section{
     .delivery-item-text{
     
         h2{
-            font-size: 3rem;
+            font-size: 5rem;
             color:#e7b343 ;
         }
 
         p{
-            font-size: 1rem;
+            font-size: 1.1rem;
         }
     }
+    
 
     .delivery-item-img{
         width: 100%;
@@ -125,7 +130,7 @@ section{
         align-items: center;
 
         img{
-            width: 400px;
+            width: 300px;
         }
     }
 }
