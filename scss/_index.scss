@@ -190,6 +190,11 @@
     color: rgb(219, 218, 218);
 }
 
+.card-body{
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
 
 .flex-container-cards h5{
     position:relative;

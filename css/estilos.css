@@ -287,6 +287,11 @@ nav {
 .card-text, .flex-container-cards p {
   color: #dbdada; }
 
+.card-body {
+  justify-content: center;
+  display: flex;
+  flex-direction: column; }
+
 .flex-container-cards h5 {
   position: relative;
   padding-bottom: 10px; }
