@@ -132,7 +132,10 @@ nav {
     margin: 0 10px;
     transition: none; }
   .nav-menu li a {
-    font-size: .9rem; } }
+    font-size: .9rem; }
+  .nav-menu li a.active {
+    padding: 5px;
+    border-bottom: 1px solid #e7b343; } }
 
 /* TERMINA MENÚ*/
 /*BANNER*/
